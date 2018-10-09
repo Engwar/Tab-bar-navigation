@@ -17,20 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VA4-hg-9y1">
-                                <rect key="frame" x="16" y="20" width="343" height="798"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VA4-hg-9y1">
+                                <rect key="frame" x="8" y="28" width="359" height="582"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FFJ-eD-YfQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="598"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="I am" translatesAutoresizingMaskIntoConstraints="NO" id="FFJ-eD-YfQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="291"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d4g-Ug-XWf">
-                                        <rect key="frame" x="0.0" y="598" width="343" height="200"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d4g-Ug-XWf">
+                                        <rect key="frame" x="0.0" y="291" width="359" height="291"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hi My name is Igor and I study  Swift programming. I'm live in St. Petersberg.My height 182 cm and weight 91 kg" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Snd-4S-ypt">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="291"/>
+                                                <color key="backgroundColor" red="0.38676786422729492" green="0.90747934579849243" blue="0.8974652886390686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VA4-hg-9y1" firstAttribute="leading" secondItem="jXZ-vT-6H2" secondAttribute="leading" constant="8" id="IhU-q4-8Xf"/>
+                            <constraint firstItem="jXZ-vT-6H2" firstAttribute="trailing" secondItem="VA4-hg-9y1" secondAttribute="trailing" constant="8" id="Od7-0O-7ZE"/>
+                            <constraint firstItem="VA4-hg-9y1" firstAttribute="top" secondItem="jXZ-vT-6H2" secondAttribute="top" constant="8" id="vYA-vy-Pvs"/>
+                            <constraint firstItem="jXZ-vT-6H2" firstAttribute="bottom" secondItem="VA4-hg-9y1" secondAttribute="bottom" constant="8" id="vfc-ag-n9E"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jXZ-vT-6H2"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About myself" image="branch" id="fvc-Vm-VUj">
@@ -186,6 +199,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="I am" width="200" height="200"/>
         <image name="apparat" width="291" height="200"/>
         <image name="branch" width="36" height="36"/>
         <image name="hobby" width="36" height="36"/>
